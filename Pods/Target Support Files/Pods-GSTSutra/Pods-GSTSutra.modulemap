@@ -1,0 +1,6 @@
+framework module Pods_GSTSutra {
+  umbrella header "Pods-GSTSutra-umbrella.h"
+
+  export *
+  module * { export * }
+}

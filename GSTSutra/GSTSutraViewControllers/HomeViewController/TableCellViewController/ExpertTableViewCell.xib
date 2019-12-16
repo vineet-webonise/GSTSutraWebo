@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11761" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Century Gothic Bold.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+        <array key="Century Gothic Regular.ttf">
+            <string>CenturyGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpertTableViewCell" rowHeight="125" id="UKf-zj-zSK" customClass="ExpertTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UKf-zj-zSK" id="zPX-pa-iTb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_photo" translatesAutoresizingMaskIntoConstraints="NO" id="Ca2-CJ-D7m">
+                        <rect key="frame" x="8" y="13" width="113" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="113" id="apm-zL-Aaw"/>
+                            <constraint firstAttribute="height" constant="110" id="ebf-0O-31J"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31/12/2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRD-z1-hzX">
+                        <rect key="frame" x="131" y="100" width="114" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="3w8-9f-Ac7"/>
+                            <constraint firstAttribute="width" constant="114" id="j20-Ws-x7w"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D08-nS-1jE">
+                        <rect key="frame" x="129" y="0.0" width="191" height="97"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="97" id="NLc-Vn-1gx"/>
+                            <constraint firstAttribute="width" constant="191" id="Ui8-SG-pFD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ZRD-z1-hzX" secondAttribute="bottom" constant="3.5" id="6u5-x2-KXN"/>
+                    <constraint firstAttribute="trailing" secondItem="D08-nS-1jE" secondAttribute="trailing" id="919-TK-0SY"/>
+                    <constraint firstItem="D08-nS-1jE" firstAttribute="leading" secondItem="Ca2-CJ-D7m" secondAttribute="trailing" constant="8" id="Fhy-4K-2XU"/>
+                    <constraint firstItem="Ca2-CJ-D7m" firstAttribute="leading" secondItem="zPX-pa-iTb" secondAttribute="leading" constant="8" id="SLh-HG-WYd"/>
+                    <constraint firstItem="Ca2-CJ-D7m" firstAttribute="top" secondItem="zPX-pa-iTb" secondAttribute="top" constant="13" id="Uix-lu-qeY"/>
+                    <constraint firstItem="ZRD-z1-hzX" firstAttribute="leading" secondItem="Ca2-CJ-D7m" secondAttribute="trailing" constant="10" id="Ve8-Op-OVT"/>
+                    <constraint firstItem="D08-nS-1jE" firstAttribute="top" secondItem="zPX-pa-iTb" secondAttribute="top" id="gsV-tn-dnm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="NewDateLabel" destination="ZRD-z1-hzX" id="kCA-Kc-2jp"/>
+                <outlet property="NewsImageView" destination="Ca2-CJ-D7m" id="fKf-DA-6hg"/>
+                <outlet property="NewsTitleLabel" destination="D08-nS-1jE" id="BvH-iS-rCd"/>
+            </connections>
+            <point key="canvasLocation" x="299" y="124.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_photo" width="115" height="115"/>
+    </resources>
+</document>
