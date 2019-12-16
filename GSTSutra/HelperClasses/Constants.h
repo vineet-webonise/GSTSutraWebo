@@ -15,11 +15,12 @@
 
 #pragma mark Distribution URL
 
-#define SERVER_API @"http://gstsutra.com/app"
-#define ImageSERVER_API @"http://gstsutra.com"
+//#define SERVER_API @"http://gstsutra.com/app"
+//#define ImageSERVER_API @"http://gstsutra.com"
 
-
-
+//Preprod url's, the above 2 lines must be uncommented & bellow 2 lines must be commented to set prod environment of app.
+#define SERVER_API @"http://preprod.gstsutra.com/app"
+#define ImageSERVER_API @"http://preprod.gstsutra.com"
 
 
 #define APPDELEGATE ((AppDelegate*)[[UIApplication sharedApplication] delegate])
