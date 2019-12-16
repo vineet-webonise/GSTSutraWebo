@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11761" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeftDrawerLogoTableViewCell" rowHeight="56" id="KGk-i7-Jjw" customClass="LeftDrawerLogoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gstTopLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="opN-iy-q7a">
+                        <rect key="frame" x="13" y="3" width="174" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="766-yE-t2J"/>
+                            <constraint firstAttribute="width" constant="174" id="wS6-S3-zNp"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="opN-iy-q7a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Ae0-sH-1un"/>
+                    <constraint firstItem="opN-iy-q7a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="Wt7-rh-TvO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="logoImageView" destination="opN-iy-q7a" id="KZZ-I8-SGL"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="127"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gstTopLogo.png" width="332" height="92"/>
+    </resources>
+</document>

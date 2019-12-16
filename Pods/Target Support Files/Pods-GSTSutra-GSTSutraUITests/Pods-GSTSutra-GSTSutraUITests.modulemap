@@ -1,0 +1,6 @@
+framework module Pods_GSTSutra_GSTSutraUITests {
+  umbrella header "Pods-GSTSutra-GSTSutraUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
