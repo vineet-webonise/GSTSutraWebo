@@ -2147,7 +2147,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 100;
+				CURRENT_PROJECT_VERSION = 101;
 				DEVELOPMENT_TEAM = BWEH7ZFV8B;
 				INFOPLIST_FILE = GSTSutra/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -2171,7 +2171,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 100;
+				CURRENT_PROJECT_VERSION = 101;
 				DEVELOPMENT_TEAM = BWEH7ZFV8B;
 				INFOPLIST_FILE = GSTSutra/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
