@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11761" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Century Gothic Bold.TTF">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="topCenterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XWx-w1-aTk">
+                    <rect key="frame" x="3" y="5" width="104" height="104"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104" id="Xcf-9i-iAm"/>
+                        <constraint firstAttribute="height" constant="104" id="qSB-Fx-TKy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM3-7A-xE4">
+                    <rect key="frame" x="115" y="5" width="205" height="104"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="104" id="J7q-e1-Wef"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nM3-7A-xE4" firstAttribute="leading" secondItem="XWx-w1-aTk" secondAttribute="trailing" constant="8" id="151-2E-aov"/>
+                <constraint firstItem="XWx-w1-aTk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3" id="8Qo-0F-Xia"/>
+                <constraint firstAttribute="bottom" secondItem="nM3-7A-xE4" secondAttribute="bottom" constant="5" id="Cn2-0Z-Neo"/>
+                <constraint firstItem="nM3-7A-xE4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="IgP-FP-h2P"/>
+                <constraint firstAttribute="trailing" secondItem="nM3-7A-xE4" secondAttribute="trailing" id="XZY-e8-QvT"/>
+                <constraint firstItem="XWx-w1-aTk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="mV8-UV-4YN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameCenterLabel" destination="nM3-7A-xE4" id="x5F-xf-0rR"/>
+                <outlet property="profileCenterImageView" destination="XWx-w1-aTk" id="3sb-eH-3Vk"/>
+            </connections>
+            <point key="canvasLocation" x="339" y="85"/>
+        </view>
+    </objects>
+</document>
